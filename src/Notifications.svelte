@@ -7,7 +7,9 @@
 			<div 
         class="progress" 
         style="animation-duration: {toast.timeout}ms;"
-        on:animationend={() => removeToast(toast.id) }>
+        on:animationend={() => removeToast(toast.id) }
+	on:click={() => removeToast(toast.id) }				
+	>
 			</div>
 		</li>	
 	{/each}
